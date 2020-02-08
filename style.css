@@ -14,10 +14,13 @@ body {
     direction: rtl;
 }
 
-header {
+.container {
     max-width: 1800px;
     margin: 0 auto;
     width: 100%;
+}
+
+header {
     position: relative;
 }
 
@@ -43,4 +46,21 @@ header h1 {
 header p {
     font-size: 36px;
     margin: 0;
+}
+
+.family {
+    background-image: url(images/background.png);
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+}
+
+.family p {
+    display: block;
+    right: 50%;
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
 }
