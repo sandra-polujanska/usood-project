@@ -90,7 +90,7 @@ button {
     margin-top: 50px;
     border-radius: 30px;
     background: transparent;
-    border: solid 2px;
+    border: solid 1.5px;
 }
 
 button:hover {
@@ -147,6 +147,20 @@ h2 {
     text-align: center;
     margin-top: 50px;
 }
+
+.card {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 50px 0;
+}
+
+.card img {
+    max-width: 800px;
+}
+
 
 [class*="col-"] {
     float: left;
