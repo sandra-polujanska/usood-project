@@ -15,19 +15,19 @@ function openCard(evt, colorName) {
     evt.currentTarget.className += " active";
   }
 
-  function openSection(evt, availability) {
-    var i, tabcontent, tablinks;
+  function openSection(evt2, availability) {
+    var i, partnerslogos, partnerslinks;
 
-    tabcontent = document.getElementsByClassName("partners-logos");
+    partnerslogos = document.getElementsByClassName("partnerslogos");
     for (i = 0; i < partnerslinks; i++) {
         partnerslinks[i].style.display = "none";
     }
   
-    tablinks = document.getElementsByClassName("partners-links");
+    partnerslinks = document.getElementsByClassName("partnerslinks");
     for (i = 0; i < partnerslinks.length; i++) {
         partnerslinks[i].className = partnerslinks[i].className.replace(" active", "");
     }
 
     document.getElementById(availability).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt2.currentTarget.className += " active";
   }
