@@ -7,7 +7,7 @@
     <meta name="keywords" content="Usood">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usood</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -27,47 +27,63 @@
     <figure>
         <img src="images/homeplayer1.png" alt="Home video" >
     </figure>
-    <button><a href="#">اشتر الآن</a></button>
+  <!--  <button class="learn-more"><a href="#">اشتر الآن</a></button> -->
     </div>
     <p class="caption">اعرف المزيد عن مميزات التلفزيون المخصص لأهل العراق:</p>
-    <div class="key-features row">
-        <div class="icon col-m-3 col-s-6">
-            <p>تلفزيون</p>
-            <img src="images/green-icon.png" alt="Green icon">
-            <p>رقمي</p>
-        </div>
-        <div class="icon col-m-3 col-s-6">
-            <p>جهاز استقبال</p>
-            <img src="images/blue-icon.png" alt="Blue icon">
-            <p>مدمج</p>
-        </div>
-        <div class="icon col-m-3 col-s-6">
-            <p>ألعاب للعائلة</p>
-            <img src="images/pink-icon.png" alt="Pink icon">
-            <p>تطبيق Family Together</p>
-        </div>
-        <div class="icon col-m-3 col-s-6">
-            <p>مشاركة المحتوى</p>
-            <img src="images/purple-icon.png" alt="Purple icon">
-            <p>من الهاتف للتلفزيون</p>
-        </div>
+   
+    <div class="tab" >
+        
+                <button class="tablinks" onclick="openCard(event, 'Green')"><p>تلفزيون</p>
+                <img src="images/green-icon.png" alt="Green icon">
+                <p>رقمي</p>
+                </button>   
+            
+                <button class="tablinks" onclick="openCard(event, 'Blue')"><p>جهاز استقبال</p>
+                <img src="images/blue-icon.png" alt="Blue icon">
+                <p>مدمج</p>
+                </button>
+         
+                <button class="tablinks" onclick="openCard(event, 'Pink')"><p>ألعاب للعائلة</p>
+                <img src="images/pink-icon.png" alt="Pink icon">
+                <p>تطبيق Family Together</p>
+                </button>
+
+                <button class="tablinks" onclick="openCard(event, 'Purple')"><p>مشاركة المحتوى</p>
+                <img src="images/purple-icon.png" alt="Purple icon">
+                <p>من الهاتف للتلفزيون</p>
+                </button>
     </div>
-    <div class="card card1">
-        <h2>رقمي</h2>
+    <div id="Green" class="tabcontent">
+        <p>رقمي</p>
         <img src="images/placeholder.png" >
     </div>
-    <div class="card card2">
-        <h2>مدمج</h2>
+    <div id="Blue" class="tabcontent">
+        <p>مدمج</p>
         <img src="images/placeholder.png" >
     </div>
-    <div class="card card3">
-        <h2>تطبيق Family Together</h2>
+    <div id="Pink" class="tabcontent">
+        <p>تطبيق Family Together</p>
         <img src="images/placeholder.png" >
     </div>
-    <div class="card card4">
-        <h2>من الهاتف للتلفزيون</h2>
+    <div id="Purple" class="tabcontent">
+        <p>من الهاتف للتلفزيون</p>
         <img src="images/placeholder.png" >
     </div>
+    
+     <div class="partners">
+        <h2>اشتر الآن</h2>
+        <button class="partnerslinks" onclick="openSection(event, 'Offline')"><p>اشتر من المتجر</p></button>   
+        <button class="partnerslinks" onclick="openSection(event, 'Online')"><p>اشتر من خلال الإنترنت</p></button>
+     </div>
+     <div id="Offline" class="partners-logos">
+        <img src="images/Jibal.png" alt="Jibal" >
+        <img src="images/Elyran.jpeg" alt="Elyran" >
+    </div>
+    <div id="Online" class="partners-logos">
+        <img src="images/Jibal.png" alt="Jibal" >
+        <img src="images/watani.png" alt="Watani" >
+    </div>
+
 </main>
 
 <script type="text/javascript" src="script.js"></script>

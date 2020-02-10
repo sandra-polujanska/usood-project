@@ -83,8 +83,19 @@ figure {
 figure img {
     width: 100%;
 }
+/*
+button.learn-more {
+    width: 100px;
+    text-align: center;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    transition: 0.5s; 
+}
 
-button {
+
+button  {
     display: block;
     margin: 0 auto;
     margin-top: 50px;
@@ -93,12 +104,13 @@ button {
     border: solid 1.5px;
 }
 
-button:hover {
+button.learn-more:hover {
     cursor: pointer;
     background-color: #000;
+    color: #fff;
 }
 
-button a {
+button.learn-more a {
     padding: 20px 40px;
     line-height: 60px;
     font-size: 30px;
@@ -107,10 +119,7 @@ button a {
     font-family: 'SamsungOneArabic';
 }
 
-button a:hover {
-    color: #fff;
-}
-
+*/
 .caption {
     display: block;
     max-width: 700px;
@@ -121,45 +130,67 @@ button a:hover {
     font-weight: bold;
 }
 
-.key-features {
-    max-width: 1200px;
+.tab {
+    display: block;
     margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+    height: auto;
     margin-top: 30px;
-}
+  }
+  
 
-.icon {
-    width: 100px;
+button {
+    max-width: 300px;
+    height: 300px;
+    background-color: #fff;
     text-align: center;
-    border-radius: 5%;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    transition: 0.5s; 
-}
+    padding: 50px;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 
-.icon:hover {
+button:hover {
+    background-color: #fff;;
     background-image: url(images/popup.png);
     background-size: cover;
     cursor: pointer;
 }
 
-h2 {
-    text-align: center;
-    margin-top: 50px;
+.tabcontent {
+    display: none;
+    text-align:center;
+
+  }
+
+.tabcontent img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    
 }
 
-.card {
-    margin: 0 auto;
-    text-align: center;
-}
+ #Pink {
+      display: block;
+  }
 
-.card h2 {
-    margin: 50px 0;
-}
+  .partners {
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+      max-width: 1400px;
+      width: 100%;
+      height: auto;
+      text-align: center;
+  }
 
-.card img {
-    max-width: 800px;
-}
+  .partners h2 {
+    font-size: 34px;
+  }
+
+  
 
 
 [class*="col-"] {
@@ -171,10 +202,10 @@ h2 {
 /* MEDIA QUERIES */
 
 
-/* GRID */
+/* GRID 
 
 @media (max-width: 767px){
-    /* For tablets: */
+    /* For tablets: 
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -190,7 +221,7 @@ h2 {
   }
   
   @media (min-width: 768px) {
-    /* For desktop: */
+    /* For desktop: 
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
     .col-m-3 {width: 25%;}
@@ -204,6 +235,6 @@ h2 {
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
   }
-  
+  */
   
   /* STYLES */
