@@ -24,6 +24,7 @@ body {
     max-width: 1800px;
     margin: 0 auto;
     width: 100%;
+    text-align: center;
 }
 
 header {
@@ -33,6 +34,10 @@ header {
 header img{
     width: 100%;
     height: auto;
+}
+
+.mobileKV {
+    display: none;
 }
 
 header .headline {
@@ -66,7 +71,8 @@ article {
     margin: 0 auto;
     padding-top: 100px;
     display: block;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 300px;
     font-size: 34px;
     text-align: center;
@@ -83,27 +89,23 @@ figure {
 figure img {
     width: 100%;
 }
-/*
+
 button.learn-more {
-    width: 100px;
-    text-align: center;
-    border-radius: 5%;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    transition: 0.5s; 
-}
-
-
-button  {
     display: block;
+    max-width: 150px;
     margin: 0 auto;
+    padding: 0 30px;
     margin-top: 50px;
-    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
     background: transparent;
     border: solid 1.5px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    transition: 0.5s;
 }
-
 button.learn-more:hover {
     cursor: pointer;
     background-color: #000;
@@ -111,12 +113,9 @@ button.learn-more:hover {
 }
 
 button.learn-more a {
-    padding: 20px 40px;
-    line-height: 60px;
-    font-size: 30px;
+    line-height: 50px;
     text-decoration: none;
     color: #000;
-    font-family: 'SamsungOneArabic';
 }
 
 */
@@ -134,14 +133,18 @@ button.learn-more a {
     display: block;
     margin: 0 auto;
     overflow: hidden;
-    max-width: 1200px;
+    max-width: 1000px;
+    width:100%;
     height: auto;
     margin-top: 30px;
   }
   
-
 button {
-    max-width: 300px;
+    font-family: 'SamsungOneArabic';
+}
+ 
+.tab button {
+    width: 250px;
     height: 300px;
     background-color: #fff;
     text-align: center;
@@ -152,12 +155,14 @@ button {
     cursor: pointer;
   }
 
-button:hover {
+.tab button:hover {
     background-color: #fff;;
     background-image: url(images/popup.png);
     background-size: cover;
     cursor: pointer;
 }
+
+
 
 .tabcontent {
     display: none;
@@ -166,34 +171,109 @@ button:hover {
   }
 
 .tabcontent img {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     height: auto;
-    
 }
 
  #Pink {
       display: block;
   }
 
-  .partners {
-      display: block;
-      margin: 0 auto;
-      margin-top: 50px;
-      max-width: 1400px;
-      width: 100%;
-      height: auto;
-      text-align: center;
-  }
+.tab2 {
+    font-size: 30px;
+}
 
-  .partners h2 {
-    font-size: 34px;
-  }
-    .partnerslogos {
-      display: none;
+.tab2, .tabcontent2 {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tab2 button{
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ .tabcontent2 {
+     display: none;
+     margin-bottom: 10%;
+    
  }
 
- #Offline {
+ .tabcontent2 img {
+     margin: 20px;
+     padding: 10px 30px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ #Online {
      display: block;
  }
 
+ 
+ /* GRID */
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ @media (max-width: 767px){
+    
+    .desktopKV {
+        display: none;
+    }
+    .mobileKV {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 30px;
+        
+
+    }
+
+    article {
+        font-size: 26px;
+    }
+
+ }

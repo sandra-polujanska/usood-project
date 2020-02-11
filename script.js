@@ -1,3 +1,4 @@
+
 function openCard(evt, colorName) {
     var i, tabcontent, tablinks;
 
@@ -15,19 +16,17 @@ function openCard(evt, colorName) {
     evt.currentTarget.className += " active";
   }
 
-  function openSection(evt2, availability) {
-    var i, partnerslogos, partnerslinks;
 
-    partnerslogos = document.getElementsByClassName("partnerslogos");
-    for (i = 0; i < partnerslinks; i++) {
-        partnerslinks[i].style.display = "none";
+  function openPartners(evt, optionName) {
+    var i, tabcontent2, tablinks2;
+    tabcontent2 = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent2.length; i++) {
+      tabcontent2[i].style.display = "none";
     }
-  
-    partnerslinks = document.getElementsByClassName("partnerslinks");
-    for (i = 0; i < partnerslinks.length; i++) {
-        partnerslinks[i].className = partnerslinks[i].className.replace(" active", "");
+    tablinks2 = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks2.length; i++) {
+      tablinks2[i].className = tablinks2[i].className.replace(" active", "");
     }
-
-    document.getElementById(availability).style.display = "block";
-    evt2.currentTarget.className += " active";
+    document.getElementById(optionName).style.display = "block";
+    evt.currentTarget.className += " active";
   }
