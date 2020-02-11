@@ -1,6 +1,6 @@
 
 function openCard(evt, colorName) {
-    var i, tabcontent, tablinks;
+    let i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -18,7 +18,7 @@ function openCard(evt, colorName) {
 
 
   function openPartners(evt, optionName) {
-    var i, tabcontent2, tablinks2;
+    let i, tabcontent2, tablinks2;
     tabcontent2 = document.getElementsByClassName("tabcontent2");
     for (i = 0; i < tabcontent2.length; i++) {
       tabcontent2[i].style.display = "none";
@@ -30,3 +30,31 @@ function openCard(evt, colorName) {
     document.getElementById(optionName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " active";
+}

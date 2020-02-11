@@ -12,6 +12,7 @@
     content: "";
     display: table;
     clear: both;
+    
 }
 
 body {
@@ -42,8 +43,8 @@ header img{
 
 header .headline {
     position: absolute;
-    width: 500px;
-    height: 200px;
+    max-width: 400px;
+    height: auto;
     top: 35%;
     right: 5%;
 }
@@ -51,7 +52,7 @@ header .headline {
 header h1 {
     font-size: 40px;
     font-weight: bold;
-    margin: 0;
+    width: 100%;
 }
 
 header p {
@@ -118,7 +119,7 @@ button.learn-more a {
     color: #000;
 }
 
-*/
+
 .caption {
     display: block;
     max-width: 700px;
@@ -129,10 +130,36 @@ button.learn-more a {
     font-weight: bold;
 }
 
+.slider {
+    max-width: 1400px;
+    width: 100%;
+    position:relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.prev, .next {
+    width: auto;
+    position: absolute;
+    top: 50%;
+}
+
+.arrow {
+    width: 50px;
+}
+
+.prev {
+    right: 15%;
+}
+
+.next {
+   left: 15%;
+}
+
 .tab {
     display: block;
     margin: 0 auto;
-    overflow: hidden;
+   
     max-width: 1000px;
     width:100%;
     height: auto;
@@ -144,7 +171,7 @@ button {
 }
  
 .tab button {
-    width: 250px;
+    max-width: 250px;
     height: 300px;
     background-color: #fff;
     text-align: center;
@@ -185,7 +212,8 @@ button {
 }
 
 .tab2, .tabcontent2 {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -264,16 +292,56 @@ button {
     }
     .mobileKV {
         display: block;
+        width: 100%;
+        height: auto;
     }
 
-    header h1 {
-        font-size: 30px;
-        
+    header .headline {
+        margin: 0 auto;
+        top: 10%;
+        right: 15%;
+        text-align: center;
+    }
 
+    
+    .tab button {
+        
+        padding: 5px;
+        
+      }
+
+    header h1 {
+        font-size: 26px
+    }
+
+    header p{
+        font-size: 20px;
     }
 
     article {
-        font-size: 26px;
+        font-size: 14px;
+        padding: 30px 5px;
+        height: auto;
     }
 
+    .slider{
+        padding-bottom: 50px;
+    }
+    .prev, .next {
+        width: auto;
+        position: absolute;
+        top: 95%;
+    }
+    .prev {
+        right: 25%;
+    }
+    
+    .next {
+       left: 25%;
+    }
+
+    .tab2 button {
+        padding: 10px;
+        font-size: 16px;
+    }
  }
