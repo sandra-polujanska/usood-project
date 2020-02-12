@@ -6,7 +6,7 @@
     <meta name="description" content="Usood offer">
     <meta name="keywords" content="Usood">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usood</title>
+    <title>Usood Offer</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -21,81 +21,80 @@
 </header>
 <main class="container">
     <div class="family">
-    <article>
-        لأن أهل العراق غاليين علينا، نقدملكم تلفزيون سامسونج خصيصاً لأهل العراق بالمواصفات الي تحبوها وتخليكم مرتاحين ومتونسين.
-    </article>
-    <figure>
-        <img src="images/homeplayer1.png" alt="Home video" >
-    </figure>
-   <button class="learn-more"><a href="#">اشتر الآن</a></button>
+        <article>
+            لأن أهل العراق غاليين علينا، نقدملكم تلفزيون سامسونج خصيصاً لأهل العراق بالمواصفات الي تحبوها وتخليكم مرتاحين ومتونسين.
+        </article>
+        <figure>
+            <img src="images/homeplayer1.png" alt="Home video" >
+        </figure>
+        <button class="learn-more"><a href="#">اشتر الآن</a></button>
     </div>
     <p class="caption">اعرف المزيد عن مميزات التلفزيون المخصص لأهل العراق:</p>
 
-    <div class="tab row" >
-                <div class="col-s-12">
+    <div class="tab" >
+                <!--Green Tab-->
                 <button class="tablinks " onclick="openCard(event, 'Green')"><p>تلفزيون</p>
-                <img src="images/green-icon.png" alt="Green icon">
-                <p>رقمي</p>
+                    <img src="images/green-icon.png" alt="Green icon">
+                    <p>رقمي</p>
                 </button>   
-                </div>
-                <div class="col-s-12">
+               
+                <!--Blue Tab-->
                 <button class="tablinks " onclick="openCard(event, 'Blue')"><p>جهاز استقبال</p>
-                <img src="images/blue-icon.png" alt="Blue icon">
-                <p>مدمج</p>
+                    <img src="images/blue-icon.png" alt="Blue icon">
+                    <p>مدمج</p>
                 </button>
-                </div>
                 
-                <div class="col-s-12">
+                <!--Pink Tab-->
                 <button class="tablinks " onclick="openCard(event, 'Pink')"><p>ألعاب للعائلة</p>
-                <img src="images/pink-icon.png" alt="Pink icon">
-                <p>تطبيق Family Together</p>
+                    <img src="images/pink-icon.png" alt="Pink icon">
+                    <p>تطبيق Family Together</p>
                 </button>
-                </div>
-                <div class="col-s-12">
+                
+                <!--Purple Tab-->
                 <button class="tablinks" onclick="openCard(event, 'Purple')"><p>مشاركة المحتوى</p>
-                <img src="images/purple-icon.png" alt="Purple icon">
-                <p>من الهاتف للتلفزيون</p>
+                    <img src="images/purple-icon.png" alt="Purple icon">
+                    <p>من الهاتف للتلفزيون</p>
                 </button>
-                </div>
+               
                 
     
-            </div>
-<div class="slider">
-    <div id="Green" class="tabcontent mySlides fade">
-        <p>رقمي</p>
-        <img src="images/placeholder.png" >
     </div>
-    <div id="Blue" class="tabcontent mySlides fade">
-        <p>مدمج</p>
-        <img src="images/placeholder.png" >
+    <div class="slider">
+        <div id="Green" class="tabcontent mySlides fade">
+            <p>رقمي</p>
+            <img src="images/usood1.jpg" alt="First image" >
+        </div>
+        <div id="Blue" class="tabcontent mySlides fade">
+            <p>مدمج</p>
+            <img src="images/usood2.jpg" alt="Second image" >
+        </div>
+        <div id="Pink" class="tabcontent mySlides fade">
+            <p>تطبيق Family Together</p>
+            <img src="images/usood3.jpg" alt="Third image" >
+        </div>
+        <div id="Purple" class="tabcontent mySlides fade">
+            <p>من الهاتف للتلفزيون</p>
+            <img src="images/usood4.jpg" alt="Fourth image">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"><img class="arrow" src="images/right-arrow.png" alt="Right Arrow"></a>
+        <a class="next" onclick="plusSlides(1)"><img class="arrow" src="images/left-arrow.png" alt="Left Arrow"></a>
     </div>
-    <div id="Pink" class="tabcontent mySlides fade">
-        <p>تطبيق Family Together</p>
-        <img src="images/placeholder.png" >
-    </div>
-    <div id="Purple" class="tabcontent mySlides fade">
-        <p>من الهاتف للتلفزيون</p>
-        <img src="images/placeholder.png" >
-    </div>
-    <a class="prev" onclick="plusSlides(-1)"><img class="arrow" src="images/right-arrow.png"></a>
-    <a class="next" onclick="plusSlides(1)"><img class="arrow" src="images/left-arrow.png"></a>
-</div>
 
-<div class="tab2">
-    <h2>اشتر الآن</h2>
-    <button class="tablinks2" onclick="openPartners(event, 'Offline')"><p>اشتر من المتجر</p></button>
-    <button class="tablinks2" onclick="openPartners(event, 'Online')"><p>اشتر من خلال الإنترنت</p></button>
-  </div>
-  
-  <div id="Offline" class="tabcontent2">
-    <img src="images/Jibal.png" alt="Jibal">
-    <img src="images/Elyran.jpg" alt="Elyran">
-  </div>
-  
-  <div id="Online" class="tabcontent2">
-    <img src="images/Talaco.jpg" alt="Talaco">
-    <img src="images/watani.png" alt="Watani"> 
-  </div>
+    <div class="tab2">
+        <h2>اشتر الآن</h2>
+        <button class="tablinks2" onclick="openPartners(event, 'Offline')"><p>اشتر من المتجر</p></button>
+        <button class="tablinks2" onclick="openPartners(event, 'Online')"><p>اشتر من خلال الإنترنت</p></button>
+    </div>
+        
+    <div id="Offline" class="tabcontent2">
+        <img src="images/Jibal.png" alt="Jibal">
+        <img src="images/Elyran.jpg" alt="Elyran">
+    </div>
+    
+    <div id="Online" class="tabcontent2">
+        <img src="images/Talaco.jpg" alt="Talaco">
+        <img src="images/watani.png" alt="Watani"> 
+    </div>
 </main>
 
 <script type="text/javascript" src="script.js"></script>

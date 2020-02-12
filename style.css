@@ -7,14 +7,6 @@
     box-sizing: border-box;
 }
 
-.row::before,
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-    
-}
-
 body {
     margin: 0;
     direction: rtl;
@@ -47,6 +39,7 @@ header .headline {
     height: auto;
     top: 35%;
     right: 5%;
+    text-align: right;
 }
 
 header h1 {
@@ -110,7 +103,6 @@ button.learn-more {
 button.learn-more:hover {
     cursor: pointer;
     background-color: #000;
-    color: #fff;
 }
 
 button.learn-more a {
@@ -119,6 +111,9 @@ button.learn-more a {
     color: #000;
 }
 
+button.learn-more a:hover {
+    color: #fff;
+}
 
 .caption {
     display: block;
@@ -159,8 +154,9 @@ button.learn-more a {
 .tab {
     display: block;
     margin: 0 auto;
-   
-    max-width: 1000px;
+    overflow: hidden;
+    max-width: 900px;
+    text-align: center;
     width:100%;
     height: auto;
     margin-top: 30px;
@@ -171,8 +167,9 @@ button {
 }
  
 .tab button {
+    margin: 0 auto;
     max-width: 250px;
-    height: 300px;
+    max-height: 300px;
     background-color: #fff;
     text-align: center;
     padding: 50px;
@@ -188,8 +185,6 @@ button {
     background-size: cover;
     cursor: pointer;
 }
-
-
 
 .tabcontent {
     display: none;
@@ -246,44 +241,6 @@ button {
  }
 
  
- /* GRID */
-
-@media (max-width: 767px){
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-}
-
-@media (min-width: 768px) {
-    /* For desktop: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
-}
- 
- 
- 
- 
- 
  
  @media (max-width: 767px){
     
@@ -303,19 +260,20 @@ button {
         text-align: center;
     }
 
-    
+    .caption {
+        font-size: 26px;
+    }
+
     .tab button {
-        
         padding: 5px;
-        
       }
 
     header h1 {
-        font-size: 26px
+        font-size: 28px
     }
 
     header p{
-        font-size: 20px;
+        font-size: 26px;
     }
 
     article {
@@ -330,7 +288,7 @@ button {
     .prev, .next {
         width: auto;
         position: absolute;
-        top: 95%;
+        top: 90%;
     }
     .prev {
         right: 25%;
@@ -343,5 +301,19 @@ button {
     .tab2 button {
         padding: 10px;
         font-size: 16px;
+    }
+
+    .tab button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .tab img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .tab2 h2 {
+        font-size: 28px;
     }
  }

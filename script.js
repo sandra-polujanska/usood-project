@@ -1,4 +1,7 @@
+//script
 
+
+//Switching the image carousel by clicking on tabs
 function openCard(evt, colorName) {
     let i, tabcontent, tablinks;
 
@@ -16,7 +19,7 @@ function openCard(evt, colorName) {
     evt.currentTarget.className += " active";
   }
 
-
+//Switching the Offline/Online Partners
   function openPartners(evt, optionName) {
     let i, tabcontent2, tablinks2;
     tabcontent2 = document.getElementsByClassName("tabcontent2");
@@ -42,6 +45,8 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+//Switching images in carousel by clicking on the arrows
 
 function showSlides(n) {
   let i;
